@@ -7,3 +7,4 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 $routes->get('/tentang', 'TentangKami::index');
+$routes->get('/regulasi', 'Regulasi::index');
