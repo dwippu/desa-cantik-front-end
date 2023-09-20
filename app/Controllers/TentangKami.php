@@ -2,10 +2,10 @@
 
 namespace App\Controllers;
 
-class ProfileDesa extends BaseController
+class TentangKami extends BaseController
 {
     public function index(): string
     {
-        return view('content/profile_desa');
+        return view('content/tentang_kami');
     }
 }

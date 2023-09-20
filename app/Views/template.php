@@ -56,13 +56,13 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto">
-                        <a href="index.html" class="nav-item nav-link active">Beranda</a>
+                        <a href="/" class="nav-item nav-link <?php if (strcmp(uri_string(), "") == 0) echo 'active' ?>">Beranda</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Tentang Kami</a>
+                            <a href="#" class="nav-link dropdown-toggle <?php if (strcmp(uri_string(), "tentang") == 0) echo 'active' ?>" data-bs-toggle="dropdown">Tentang Kami</a>
                             <div class="dropdown-menu bg-light mt-2">
-                                <a href="/profil" class="dropdown-item">Profil Desa</a>
-                                <a href="team.html" class="dropdown-item">Struktur Pemerintahan</a>
-                                <a href="faq.html" class="dropdown-item">Alamat dan Kontak</a>
+                                <a href="/tentang" class="dropdown-item">Profil Desa</a>
+                                <a href="/tentang" class="dropdown-item">Struktur Pemerintahan</a>
+                                <a href="/tentang" class="dropdown-item">Alamat dan Kontak</a>
                             </div>
                         </div>
                         <a href="about.html" class="nav-item nav-link">Data & Informasi</a>
