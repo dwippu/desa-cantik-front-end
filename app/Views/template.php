@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>AI.Tech - Artificial Intelligence HTML Template</title>
+    <title>Desa Cantik - Jawa Barat</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -48,7 +48,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark p-0">
                 <a href="index.html" class="navbar-brand">
-                    <h1 class="text-white">AI<span class="text-dark">.</span>Tech</h1>
+                    <h1 class="text-white">Desa Cantik</h1>
                 </a>
                 <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse">
@@ -65,20 +65,20 @@
                                 <a href="/tentang" class="dropdown-item">Alamat dan Kontak</a>
                             </div>
                         </div>
-                        <a href="about.html" class="nav-item nav-link">Data & Informasi</a>
+                        <a href="/data" class="nav-item nav-link <?php if (strcmp(uri_string(), "data") == 0) echo 'active' ?>">Data & Informasi</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Regulasi</a>
+                            <a href="#" class="nav-link dropdown-toggle <?php if (preg_match("/^sk/", uri_string()) == 1) echo 'active' ?>" data-bs-toggle="dropdown">Regulasi</a>
                             <div class="dropdown-menu bg-light mt-2">
-                                <a href="feature.html" class="dropdown-item">SK Desa Cantik</a>
-                                <a href="team.html" class="dropdown-item">SK Pembina Desa</a>
-                                <a href="faq.html" class="dropdown-item">SK Agen Statistik</a>
+                                <a href="/skdescan" class="dropdown-item">SK Desa Cantik</a>
+                                <a href="/skpembina" class="dropdown-item">SK Pembina Desa</a>
+                                <a href="/skagen" class="dropdown-item">SK Agen Statistik</a>
                             </div>
                         </div>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Laporan</a>
+                            <a href="#" class="nav-link dropdown-toggle <?php if (preg_match("/^laporan/", uri_string()) == 1) echo 'active' ?>" data-bs-toggle="dropdown">Laporan</a>
                             <div class="dropdown-menu bg-light mt-2">
-                                <a href="feature.html" class="dropdown-item">Laporan Pembinaan</a>
-                                <a href="team.html" class="dropdown-item">Laporan Pembinaan</a>
+                                <a href="/laporanpembinaan" class="dropdown-item">Laporan Pembinaan</a>
+                                <a href="/laporanbulanan" class="dropdown-item">Laporan Bulanan</a>
                             </div>
                         </div>
                     </div>
