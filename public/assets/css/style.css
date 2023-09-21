@@ -538,3 +538,37 @@ h6,
     padding-right: 0;
     border-right: none;
 }
+
+
+/* Data Tables CSS */
+.data_table{
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 1px 3px 5px #aaa;
+    border-radius: 5px ;
+}
+
+.data_table thead{
+    background-color: #15ACE1;
+    color: #000000;
+}
+
+.data_table tbody tr:hover{
+    background-color: #b1e3f5;
+}
+
+.data_table .btn{
+    padding: 7px 20px;
+    margin: 10px 3px 10px 0;
+    background-color: #15ACE1;
+    font-size: 25px;
+}
+
+.data_table .btn:hover{
+    background-color: #b1e3f5;
+}
+
+.data_table h3{
+    text-align: center;
+}
+
