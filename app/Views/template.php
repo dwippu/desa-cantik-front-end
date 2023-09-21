@@ -30,6 +30,11 @@
 
     <!-- Template Stylesheet -->
     <link href="../assets/css/style.css" rel="stylesheet">
+
+    <!-- Data Tables Stylesheet -->
+    <link href="../assets/css/datatables.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 </head>
 
 <body>
@@ -172,6 +177,12 @@
 
     <!-- Template Javascript -->
     <script src="../assets/js/main.js"></script>
+
+    <!-- Data Tables Javascript -->
+    <script src="../assets/js/datatables/datatables.min.js"></script>
+    <script src="../assets/js/datatables/pdfmake.min.js"></script>
+    <script src="../assets/js/datatables/vfs_fonts.js"></script>
+    <script src="../assets/js/datatables/custom.js"></script>
 </body>
 
 </html>
