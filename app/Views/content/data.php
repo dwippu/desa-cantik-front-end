@@ -18,7 +18,7 @@
             <div class="col-12">
                 <div class="data_table">
                     <h3>Judul Tabel</h3>
-                    <table id="example" class="table table-striped table-bordered" style="width:100%">
+                    <table id="example" class="table table-striped" style="width:100%">
                         <thead>
                             <tr>
                                 <th>Name</th>
