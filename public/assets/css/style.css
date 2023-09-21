@@ -545,11 +545,11 @@ h6,
     background-color: #fff;
     padding: 15px;
     box-shadow: 1px 3px 5px #aaa;
-    border-radius: 5px ;
+    border-radius: 20px ;
 }
 
 .data_table thead{
-    background-color: #15ACE1;
+    background-color: #1363C6;
     color: #000000;
 }
 
@@ -560,8 +560,9 @@ h6,
 .data_table .btn{
     padding: 7px 20px;
     margin: 10px 3px 10px 0;
-    background-color: #15ACE1;
+    background-color: #1363C6;
     font-size: 25px;
+    color: #fff;
 }
 
 .data_table .btn:hover{
