@@ -2,10 +2,10 @@
 
 namespace App\Controllers;
 
-class Regulasi extends BaseController
+class SkDescan extends BaseController
 {
     public function index(): string
     {
-        return view('content/regulasi');
+        return view('content/sk_descan');
     }
 }
