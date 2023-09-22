@@ -3,19 +3,18 @@
 <?= $this->Section('content'); ?>
 
     <!-- Hero Start -->
-    <div class="container-fluid pt-5 bg-primary hero-header mb-5">
-        <div class="container pt-5">
-            <div class="row g-5 pt-5">
-                <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
-                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3 animated slideInRight">AI.Tech</div>
-                    <h1 class="display-4 text-white mb-4 animated slideInRight">Artificial Intelligence for Your Business</h1>
-                    <p class="text-white mb-4 animated slideInRight">Tempor rebum no at dolore lorem clita rebum rebum ipsum
-                        rebum stet dolor sed justo kasd. Ut dolor sed magna dolor sea diam. Sit diam sit</p>
-                    <a href="" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInRight">Read More</a>
-                    <a href="" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Contact Us</a>
+    <div class="container-fluid pt-5 bg-primary hero-header">
+        <div class="container pt-4">
+            <div class="row g-5 pt-3">
+                <h1 class="display-4 text-white mb-1 text-center animated slideInRight">Profil Desa</h1>
+                <div class="col-lg-6 align-self-start mb-lg-5 pe-0 text-center">
+                    <img class="img-fluid pb-3 position-relative top-0 animated slideInRight" src="../assets/img/profil-pic.png" alt="" style="width: 25em;">    
                 </div>
-                <div class="col-lg-6 align-self-end text-center text-lg-end">
-                    <img class="img-fluid" src="../assets/img/hero-img.png" alt="">
+                <div class="col-lg-6 align-self-center text-center text-lg-start ps-0 mb-lg-5" style="max-width: 35em;">
+                    <h4 class="text-white mb-2 animated slideInRight">Informasi Umum Desa</h4>
+                    <p class="text-white mb-4 animated slideInRight">Desa Sukamaju merupakan wlayah penghasil beras ketan terbaik yang ada di Jawa Barat.
+                        Terdapat sebanyak 15 RW dengan mata pencaharian utama penduduknya sebagai petani beras dan palawija
+                    </p>
                 </div>
             </div>
         </div>
@@ -24,7 +23,7 @@
 
 
     <!-- Team Start -->
-    <div id="our" class="container-fluid bg-light py-5">
+    <div id="our" class="container-fluid bg-light py-5 mt-0">
         <div class="container py-5">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
