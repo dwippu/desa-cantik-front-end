@@ -9,7 +9,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="Logo.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,8 +52,12 @@
     <div class="container-fluid sticky-top">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark p-0">
-                <a href="index.html" class="navbar-brand">
-                    <h1 class="text-white">Desa Cantik</h1>
+                <a href="/" class="navbar-brand d-flex">
+                    <img src="assets/img/Logo.png" alt="logo" width="100%" height="50" class="px-1" >
+                    <div class="pt-2 px-2" style="border:0; border-left: 1px; border-color:white; border-style:solid;">
+                        <p class="display-5 m-0 p-0 text-white" style="font-size: medium;"><b>Website Desa Cantik</b></p>
+                        <p class="display-5 m-0, p-0 text-white" style="font-size: small; margin-bottom:0;">Desa Sukajaya</p>
+                    </div>
                 </a>
                 <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse">
