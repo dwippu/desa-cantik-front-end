@@ -33,4 +33,50 @@ $(document).ready(function(){
 
     table.buttons().container()
     .appendTo('#example_wrapper');
+
+    var sk_descan = $('#sk_descan').DataTable({
+        "scrollX": true,
+        "scrollY": "27em",
+        "scrollCollapse": true
+    });
+
+    sk_descan.buttons().container()
+    .appendTo('#example_wrapper');
+
+
+    var sk_agen = $('#sk_agen').DataTable({
+        "scrollX": true,
+        "scrollY": "27em",
+        "scrollCollapse": true
+    });
+
+    sk_agen.buttons().container()
+    .appendTo('#example_wrapper');
+
+    var sk_pembina = $('#sk_pembina').DataTable({
+        "scrollX": true,
+        "scrollY": "27em",
+        "scrollCollapse": true
+    });
+
+    sk_pembina.buttons().container()
+    .appendTo('#example_wrapper');
+
+    var laporan_pembinaan = $('#laporan_pembinaan').DataTable({
+        "scrollX": true,
+        "scrollY": "27em",
+        "scrollCollapse": true
+    });
+
+    laporan_pembinaan.buttons().container()
+    .appendTo('#example_wrapper'); 
+
+    var laporan_bulanan = $('#laporan_bulanan').DataTable({
+        "scrollX": true,
+        "scrollY": "27em",
+        "scrollCollapse": true
+    });
+
+    laporan_bulanan.buttons().container()
+    .appendTo('#example_wrapper'); 
 });
