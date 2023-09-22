@@ -573,3 +573,25 @@ h6,
     text-align: center;
 }
 
+/* CSS Data-Tablesk */
+.data_tablesk{
+    background-color: #fff;
+    padding: 2%;
+    box-shadow: 1px 3px 5px #686767;
+    border-radius: 20px ;
+    font-size: 0.8rem;
+}
+
+.data_tablesk button{
+    font-size:0.65rem;
+}
+
+.data_tablesk thead{
+    font-style: bold;
+    color: #14183E;
+    font-size: 0.85rem;
+}
+
+.data_tablesk tbody tr:hover{
+    background-color: #d0dbdfd7;
+}
