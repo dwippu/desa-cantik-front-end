@@ -72,48 +72,47 @@
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Testimonial</div>
-                    <h1 class="mb-4">What Say Our Clients!</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
-                        amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                        clita duo justo et tempor eirmod magna dolore erat amet</p>
-                    <a class="btn btn-primary rounded-pill px-4" href="">Read More</a>
+                    <h1 class="mb-4">Mengapa Desa Cantik?</h1>
+                    <p class="mb-4">Desa Cantik menjadi salah satu sumber dan ujung tombak dalam mewujudkan
+                         Satu Data Indonesia. Kolaborasi bersama aparatur desa adalah jalan terbaik untuk
+                         memudahkan akses dan ketersediaan data sebagai wujud transparansi pemerintah.
+                    </p>
                 </div>
                 <div class="col-lg-7 wow fadeIn" data-wow-delay="0.5s">
                     <div class="owl-carousel testimonial-carousel border-start border-primary">
                         <div class="testimonial-item ps-5">
                             <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                            <p class="fs-4">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>
+                            <p class="fs-4">Data adalah jenis kekayaan baru bangsa kita, kini data lebih berharga dari minyak</p>
                             <div class="d-flex align-items-center">
-                                <img class="img-fluid flex-shrink-0 rounded-circle" src="../assets/img/testimonial-1.jpg"
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="../assets/img/testimonial-1.png"
                                     style="width: 60px; height: 60px;">
                                 <div class="ps-3">
-                                    <h5 class="mb-1">Client Name</h5>
-                                    <span>Profession</span>
+                                    <h5 class="mb-1">Joko Widodo</h5>
+                                    <span>Presiden RI Periode 2019-2024</span>
                                 </div>
                             </div>
                         </div>
                         <div class="testimonial-item ps-5">
                             <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                            <p class="fs-4">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>
+                            <p class="fs-4">Arah kita sama, lima tahun lagi semua pihak akan percaya desa dalam mengumpulkan data. BPS memiliki otoritas untuk melatih SDM pendataan di desa, sehingga kualitas data desa terjaga</p>
                             <div class="d-flex align-items-center">
-                                <img class="img-fluid flex-shrink-0 rounded-circle" src="../assets/img/testimonial-2.jpg"
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="../assets/img/testimonial-2.png"
                                     style="width: 60px; height: 60px;">
                                 <div class="ps-3">
-                                    <h5 class="mb-1">Client Name</h5>
-                                    <span>Profession</span>
+                                    <h5 class="mb-1">Abdul Halim</h5>
+                                    <span>Kemendes PDTT Periode 2019-2024</span>
                                 </div>
                             </div>
                         </div>
                         <div class="testimonial-item ps-5">
                             <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                            <p class="fs-4">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>
+                            <p class="fs-4">BPS juga memiliki visi desa sebagai subyek pendataan yang aktif mendata, memiliki data, dan memutakhirkannya</p>
                             <div class="d-flex align-items-center">
-                                <img class="img-fluid flex-shrink-0 rounded-circle" src="../assets/img/testimonial-3.jpg"
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="../assets/img/testimonial-3.png"
                                     style="width: 60px; height: 60px;">
                                 <div class="ps-3">
-                                    <h5 class="mb-1">Client Name</h5>
-                                    <span>Profession</span>
+                                    <h5 class="mb-1">Margo Yuwono</h5>
+                                    <span>Kepala BPS RI Periode 2021-2023</span>
                                 </div>
                             </div>
                         </div>
@@ -178,16 +177,30 @@
                             </div>
                         </div>
                         <div class="accordion-item wow fadeIn" data-wow-delay="0.4s">
+                            <h2 class="accordion-header" id="headingThree2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
+                                    Apa dasar hukum pelaksanaan Desa Cantik?
+                                </button>
+                            </h2>
+                            <div id="collapseThree2" class="accordion-collapse collapse" aria-labelledby="headingThree2"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body p-3">
+                                UU No. 16 tahun 1997 Tentang Statisitik, UU No. 23 tahun 2014 Tentang Pemerintah Daerah, Perpres No. 39 tahun 2019 Tentang Satu Data Indonesia, UU No. 6 tahun 2014 Tentang Desa, dam Permen DPDTT RI No. 13 tahun 2020 Tentang Prioritas Penggunaan Dana Desa Tahun 2021
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.5s">
                             <h2 class="accordion-header" id="headingFour">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                                    Apa dasar hukum pelaksanaan Desa Cantik?
+                                    Bagaimana cara menjadi desa cantik?
                                 </button>
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                 data-bs-parent="#accordionFAQ1">
                                 <div class="accordion-body p-3">
-                                UU No. 16 tahun 1997 Tentang Statisitik, UU No. 23 tahun 2014 Tentang Pemerintah Daerah, Perpres No. 39 tahun 2019 Tentang Satu Data Indonesia, UU No. 6 tahun 2014 Tentang Desa, dam Permen DPDTT RI No. 13 tahun 2020 Tentang Prioritas Penggunaan Dana Desa Tahun 2021
+                                Kepala BPS mengeluarkan surat keputusan mengenai daftar desa yang akan dibina dan ditetapkan sebagai Desa Cinta Statistik (Desa Cantik)
                                 </div>
                             </div>
                         </div>
@@ -195,59 +208,73 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="accordion" id="accordionFAQ2">
-                        <div class="accordion-item wow fadeIn" data-wow-delay="0.5s">
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.6s">
                             <h2 class="accordion-header" id="headingFive">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    Bagaimana cara menjadi desa cantik?
+                                    Apa saja yang akan dibina oleh BPS?
                                 </button>
                             </h2>
                             <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                                 data-bs-parent="#accordionFAQ2">
                                 <div class="accordion-body p-3">
-                                Kepala BPS mengeluarkan surat keputusan mengenai daftar desa yang akan dibina dan ditetapkan sebagai Desa Cinta Statistik (Desa Cantik)
+                                    Inventarisir kebutuhan data, penyusunan instrumen pengumpulan data, teknik pengumpulan data, pengolahan, analisis, diseminasi,  manajemen kualitas data, serta pemanfaatan data desa untuk dasar kebijakan
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item wow fadeIn" data-wow-delay="0.6s">
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.7s">
                             <h2 class="accordion-header" id="headingSix">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                    Apa saja yang akan dibina oleh BPS?
+                                    Apa hubungan Desa Cantik dengan SGDs Desa?
                                 </button>
                             </h2>
                             <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
                                 data-bs-parent="#accordionFAQ2">
                                 <div class="accordion-body p-3">
-                                Inventarisir kebutuhan data, penyusunan instrumen pengumpulan data, teknik pengumpulan data, pengolahan, analisis, diseminasi,  manajemen kualitas data, serta pemanfaatan data desa untuk dasar kebijakan
+                                BPS membangun sinergitas dengan Kemendes PDTT dalam membangun kemitraan statistik desa melalui penyediaan data-data yang diperlukan di tingkat desa. Dengan demikian, pencatatan data dan pemetaan potensi desa dapat tersandarisasi
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item wow fadeIn" data-wow-delay="0.7s">
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.8s">
                             <h2 class="accordion-header" id="headingSeven">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                    Will you maintain my site for me?
+                                    Siapa yang menjadi pembina desa cantik?
                                 </button>
                             </h2>
                             <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
                                 data-bs-parent="#accordionFAQ2">
                                 <div class="accordion-body p-3">
-                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                                Jabatan Fungsional di BPS Kab/Kota yang tersertifikasi memberikan pembinaan pada aparatur desa
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item wow fadeIn" data-wow-delay="0.8s">
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.9s">
+                            <h2 class="accordion-header" id="headingSeven2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSeven2" aria-expanded="false" aria-controls="collapseSeven2">
+                                    Bagaimana awal mula Desa Cantik?
+                                </button>
+                            </h2>
+                            <div id="collapseSeven2" class="accordion-collapse collapse" aria-labelledby="headingSeven2"
+                                data-bs-parent="#accordionFAQ2">
+                                <div class="accordion-body p-3">
+                                Pada tahun 2019, BPS Sumatera Barat mencanangkan "Nagari Statistik" dan BPS Sulawesi Selatan melaksanakan "Kampung Statistik" untuk mendekatakan data dan statistik kepada masyarakat. Pragram tersebut menjadi cikal bakal "Desa Cantik" yang dilaksankan secara nasional mulai tahun 2021
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="1s">
                             <h2 class="accordion-header" id="headingEight">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                    I’m on a strict budget. Do you have any low cost options?
+                                    Apa manfaat desa cantik bagi pemerintah?
                                 </button>
                             </h2>
                             <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
                                 data-bs-parent="#accordionFAQ2">
                                 <div class="accordion-body p-3">
-                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                                Tersedianya data yang mutakhir sebagai sumber utama dalam proses penyusunan RPJM dan RKP Desa serta menunjukkan keterbukaan dan transparansi data instansi pemerintah
                                 </div>
                             </div>
                         </div>
