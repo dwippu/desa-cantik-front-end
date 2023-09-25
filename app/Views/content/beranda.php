@@ -199,13 +199,13 @@
                             <h2 class="accordion-header" id="headingFive">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    Will you maintain my site for me?
+                                    Bagaimana cara menjadi desa cantik?
                                 </button>
                             </h2>
                             <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                                 data-bs-parent="#accordionFAQ2">
                                 <div class="accordion-body p-3">
-                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                                Kepala BPS mengeluarkan surat keputusan mengenai daftar desa yang akan dibina dan ditetapkan sebagai Desa Cinta Statistik (Desa Cantik)
                                 </div>
                             </div>
                         </div>
@@ -213,13 +213,13 @@
                             <h2 class="accordion-header" id="headingSix">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                    I’m on a strict budget. Do you have any low cost options?
+                                    Apa saja yang akan dibina oleh BPS?
                                 </button>
                             </h2>
                             <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
                                 data-bs-parent="#accordionFAQ2">
                                 <div class="accordion-body p-3">
-                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                                Inventarisir kebutuhan data, penyusunan instrumen pengumpulan data, teknik pengumpulan data, pengolahan, analisis, diseminasi,  manajemen kualitas data, serta pemanfaatan data desa untuk dasar kebijakan
                                 </div>
                             </div>
                         </div>
