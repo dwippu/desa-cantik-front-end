@@ -69,9 +69,9 @@
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle <?php if (strcmp(uri_string(), "tentang") == 0) echo 'active' ?>" data-bs-toggle="dropdown">Tentang Kami</a>
                             <div class="dropdown-menu bg-light mt-2">
-                                <a href="/tentang" class="dropdown-item">Profil Desa</a>
-                                <a href="/tentang" class="dropdown-item">Struktur Pemerintahan</a>
-                                <a href="/tentang" class="dropdown-item">Alamat dan Kontak</a>
+                                <a href="/tentang#profil" class="dropdown-item">Profil Desa</a>
+                                <a href="/tentang#struktur" class="dropdown-item">Struktur Pemerintahan</a>
+                                <a href="/tentang#alamat" class="dropdown-item">Alamat dan Kontak</a>
                             </div>
                         </div>
                         <a href="/data" class="nav-item nav-link <?php if (strcmp(uri_string(), "data") == 0) echo 'active' ?>">Data & Informasi</a>
