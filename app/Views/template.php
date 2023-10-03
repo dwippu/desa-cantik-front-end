@@ -9,7 +9,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="Logo.ico" rel="icon">
+    <link href="../Logo.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,10 +53,10 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark p-0">
                 <a href="/" class="navbar-brand d-flex">
-                    <img src="assets/img/Logo.png" alt="logo" width="100%" height="50" class="px-1" >
+                    <img src="../assets/img/Logo.png" alt="logo" width="100%" height="50" class="px-1" >
                     <div class="pt-2 px-2" style="border:0; border-left: 1px; border-color:white; border-style:solid;">
                         <p class="display-5 m-0 p-0 text-white" style="font-size: medium;"><b>Website Desa Cantik</b></p>
-                        <p class="display-5 m-0, p-0 text-white" style="font-size: small; margin-bottom:0;">Desa Sukamaju</p>
+                        <p class="display-5 m-0, p-0 text-white" style="font-size: small; margin-bottom:0;">Desa <?= $nama_desa['nama_desa'] ?></p>
                     </div>
                 </a>
                 <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
@@ -65,29 +65,29 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto">
-                        <a href="/" class="nav-item nav-link <?php if (strcmp(uri_string(), "") == 0) echo 'active' ?>">Beranda</a>
+                        <a href="/<?= service('uri')->getSegment(1) ?>/" class="nav-item nav-link <?php if (strcmp(service('uri')->getSegment(2), "") == 0) echo 'active' ?>">Beranda</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle <?php if (strcmp(uri_string(), "tentang") == 0) echo 'active' ?>" data-bs-toggle="dropdown">Tentang Kami</a>
+                            <a href="#" class="nav-link dropdown-toggle <?php if (strcmp(service('uri')->getSegment(2), "tentang") == 0) echo 'active' ?>" data-bs-toggle="dropdown">Tentang Kami</a>
                             <div class="dropdown-menu bg-light mt-2">
-                                <a href="/tentang" class="dropdown-item">Profil Desa</a>
-                                <a href="/tentang" class="dropdown-item">Struktur Pemerintahan</a>
-                                <a href="/tentang" class="dropdown-item">Alamat dan Kontak</a>
+                                <a href="/<?= service('uri')->getSegment(1) ?>/tentang" class="dropdown-item">Profil Desa</a>
+                                <a href="/<?= service('uri')->getSegment(1) ?>/tentang" class="dropdown-item">Struktur Pemerintahan</a>
+                                <a href="/<?= service('uri')->getSegment(1) ?>/tentang" class="dropdown-item">Alamat dan Kontak</a>
                             </div>
                         </div>
-                        <a href="/data" class="nav-item nav-link <?php if (strcmp(uri_string(), "data") == 0) echo 'active' ?>">Data & Informasi</a>
+                        <a href="/<?= service('uri')->getSegment(1) ?>/data" class="nav-item nav-link <?php if (strcmp(service('uri')->getSegment(2), "data") == 0) echo 'active' ?>">Data & Informasi</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle <?php if (preg_match("/^sk/", uri_string()) == 1) echo 'active' ?>" data-bs-toggle="dropdown">Regulasi</a>
+                            <a href="#" class="nav-link dropdown-toggle <?php if (preg_match("/^sk/", service('uri')->getSegment(2)) == 1) echo 'active' ?>" data-bs-toggle="dropdown">Regulasi</a>
                             <div class="dropdown-menu bg-light mt-2">
-                                <a href="/skdescan" class="dropdown-item">SK Desa Cantik</a>
-                                <a href="/skpembina" class="dropdown-item">SK Pembina Desa</a>
-                                <a href="/skagen" class="dropdown-item">SK Agen Statistik</a>
+                                <a href="/<?= service('uri')->getSegment(1) ?>/skdescan" class="dropdown-item">SK Desa Cantik</a>
+                                <a href="/<?= service('uri')->getSegment(1) ?>/skpembina" class="dropdown-item">SK Pembina Desa</a>
+                                <a href="/<?= service('uri')->getSegment(1) ?>/skagen" class="dropdown-item">SK Agen Statistik</a>
                             </div>
                         </div>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle <?php if (preg_match("/^laporan/", uri_string()) == 1) echo 'active' ?>" data-bs-toggle="dropdown">Laporan</a>
                             <div class="dropdown-menu bg-light mt-2">
-                                <a href="/laporanpembinaan" class="dropdown-item">Laporan Pembinaan</a>
-                                <a href="/laporanbulanan" class="dropdown-item">Laporan Bulanan</a>
+                                <a href="/<?= service('uri')->getSegment(1) ?>/laporanpembinaan" class="dropdown-item">Laporan Pembinaan</a>
+                                <a href="/<?= service('uri')->getSegment(1) ?>/laporanbulanan" class="dropdown-item">Laporan Bulanan</a>
                             </div>
                         </div>
                     </div>
@@ -110,7 +110,7 @@
                         Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
                     </div>
                     <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
-                        Desa Sukamaju | Kota Bandung | Jawa Barat
+                        Desa <?= $nama_desa['nama_desa'] ?> | <?= $nama_desa['nama_kab'] ?> | <?= $nama_desa['nama_prov'] ?>
                     </div>
                 </div>
             </div>

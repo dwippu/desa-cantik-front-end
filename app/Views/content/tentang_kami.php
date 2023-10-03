@@ -12,8 +12,7 @@
                 </div>
                 <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5" style="max-width: 35em;">
                     <h4 class="text-white mb-2 animated slideInRight">Informasi Umum Desa</h4>
-                    <p class="text-white mb-4 animated slideInRight">Desa Sukamaju merupakan wlayah penghasil beras ketan terbaik yang ada di Jawa Barat.
-                        Terdapat sebanyak 15 RW dengan mata pencaharian utama penduduknya sebagai petani beras dan palawija
+                    <p class="text-white mb-4 animated slideInRight"><?= $profil['info_umum'] ?>
                     </p>
                 </div>
             </div>
@@ -27,10 +26,10 @@
         <div class="container py-5">
             <div class="row g-3 align-items-center">
                 <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
-                    <h1 class="mb-4">Struktur Pemerintahan Desa Sukamaju</h1>
-                    <p class="mb-2">Jl. Kita Masih Panjang, Jangan Patah Semangat, Sebelum Juara, Jawa Barat 40552</p>
-                    <a class="mb-4" href="mailto:emaildesa@desa.go.id">emaildesa@desa.go.id</a>
-                    <p class="mb-4">+621234567890</p>
+                    <h1 class="mb-4">Struktur Pemerintahan Desa <?= $nama_desa['nama_desa'] ?></h1>
+                    <p class="mb-2"><?= $profil['alamat'] ?></p>
+                    <a class="mb-4" href="mailto: <?= $profil['email'] ?>"><?= $profil['email'] ?></a>
+                    <p class="mb-4"><?= $profil['telp'] ?></p>
                 </div>
                 <div class="col-md-7">
                     <div class="row g-4">
@@ -141,7 +140,7 @@
                 <p class="mt-4">BPS Provinsi Jawa Barat</p>
                 <!--The div element for the map -->
                 <div id="map">
-                    <iframe width="100%" height="500" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.931286487193!2d107.63841197469763!3d-6.898821767512148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e7bc5e5e19dd%3A0x1cc1da279c40b9a0!2sBPS%20Provinsi%20Jawa%20Barat!5e0!3m2!1sen!2sid!4v1695391190796!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe <?= $profil['html_tag'] ?> width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
