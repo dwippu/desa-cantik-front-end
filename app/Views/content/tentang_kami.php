@@ -3,7 +3,7 @@
 <?= $this->Section('content'); ?>
 
     <!-- Informasi Umum Start -->
-    <div class="container-fluid pt-5 bg-primary hero-header">
+    <div id="profil" class="container-fluid pt-5 bg-primary hero-header">
         <div class="container pt-4">
             <div class="row g-5 pt-3">
                 <h1 class="display-4 text-white mb-1 text-center animated slideInRight">Profil Desa</h1>
@@ -22,7 +22,7 @@
 
 
     <!-- Struktur Start -->
-    <div id="our" class="container-fluid bg-light py-5 mt-0">
+    <div id="struktur" class="container-fluid bg-light py-5 mt-0">
         <div class="container py-5">
             <div class="row g-3 align-items-center">
                 <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
@@ -133,7 +133,7 @@
     <!-- Struktur End -->
 
     <!-- Maps Start -->
-    <div class="container-xxl py-5">
+    <div id="alamat" class="container-xxl py-5">
         <div class="container py-5">
             <div class="row g-5">
                 <h3 class="mb-0">Hubungi Kami</h3>
