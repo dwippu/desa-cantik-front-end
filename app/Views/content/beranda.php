@@ -16,6 +16,24 @@
                         </div>
                         <button class="btn btn-light ms-2 py-1 px-3 fw-bold animated slideInRight" data-toggle="modal" data-target="#MFDModal">Ubah Lokasi</button>
                     </nav>
+                    <div class="mt-2">
+                        <form id="" action="/ubah" method="post">
+                            <div class="form-group">
+                                <div class="dropdown bootstrap-select select-mfd form-control">
+                                    <select class="form-select" name="kabupaten" id="pilih_kabupaten">
+                                        <option  value=''>-- Pilih Kabupaten --</option>
+                                        <?php foreach ($kab as $i): ?>
+                                            <option value="<?= $i['kab'] ?>"><?= $i['nama_kab'] ?></option>
+                                        <?php endforeach;?>
+                                    </select>
+                                    <select class="form-select" name="desa" id="pilih_desa" disabled>
+                                        <option selected disabled value=''>-- Pilih Desa --</option>
+                                    </select>
+                                    <button type="submit" class="btn btn-light mt-3 py-3">Ubah</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
                 <div class="col-lg-6 align-self-end text-center text-lg-end">
                     <img class="img-fluid" src="../assets/img/hero-img.png" alt="">

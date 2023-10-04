@@ -43,7 +43,6 @@ $(document).ready(function(){
     sk_descan.buttons().container()
     .appendTo('#example_wrapper');
 
-
     var sk_agen = $('#sk_agen').DataTable({
         "scrollX": true,
         "scrollY": "27em",
@@ -78,5 +77,17 @@ $(document).ready(function(){
     });
 
     laporan_bulanan.buttons().container()
-    .appendTo('#example_wrapper'); 
+    .appendTo('#example_wrapper');
+
+    // Menu ubah Desa
+    $('#pilih_kabupaten').change(function(){
+        let idkab = $('#pilih_kabupaten :selected').val();
+        $.ajax({url: "/desa/"+idkab, success: function(result){
+            $('#pilih_desa option').not(':disabled').remove();
+            for (var key in result){
+                $('#pilih_desa').append($('<option>', {value:result[key]['kode_desa'], text:result[key]['nama_desa']}));
+            }
+            $('#pilih_desa').prop("disabled", false);
+        }})
+    });
 });

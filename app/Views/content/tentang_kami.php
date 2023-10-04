@@ -12,7 +12,7 @@
                 </div>
                 <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5" style="max-width: 35em;">
                     <h4 class="text-white mb-2 animated slideInRight">Informasi Umum Desa</h4>
-                    <p class="text-white mb-4 animated slideInRight"><?= $profil['info_umum'] ?>
+                    <p class="text-white mb-4 animated slideInRight"><?= ($profil) ? $profil['info_umum'] : '';?>
                     </p>
                 </div>
             </div>
@@ -26,10 +26,10 @@
         <div class="container py-5">
             <div class="row g-3 align-items-center">
                 <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
-                    <h1 class="mb-4">Struktur Pemerintahan Desa <?= $nama_desa['nama_desa'] ?></h1>
-                    <p class="mb-2"><?= $profil['alamat'] ?></p>
-                    <a class="mb-4" href="mailto: <?= $profil['email'] ?>"><?= $profil['email'] ?></a>
-                    <p class="mb-4"><?= $profil['telp'] ?></p>
+                    <h1 class="mb-4">Struktur Pemerintahan Desa <?= ($profil) ? $nama_desa['nama_desa'] : '' ?></h1>
+                    <p class="mb-2"><?= ($profil) ? $profil['alamat'] : '' ?></p>
+                    <a class="mb-4" href="mailto: <?= ($profil) ? $profil['email'] : '' ?>"><?= ($profil) ? $profil['email'] : '' ?></a>
+                    <p class="mb-4"><?= ($profil) ? $profil['telp'] : '' ?></p>
                 </div>
                 <div class="col-md-7">
                     <div class="row g-4">
@@ -139,9 +139,11 @@
                 <h3 class="mb-0">Hubungi Kami</h3>
                 <p class="mt-4">BPS Provinsi Jawa Barat</p>
                 <!--The div element for the map -->
+                <?php if ($profil):?>
                 <div id="map">
                     <iframe <?= $profil['html_tag'] ?> width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
+                <?php endif ?>
             </div>
         </div>
     </div>

@@ -8,6 +8,7 @@ use CodeIgniter\HTTP\IncomingRequest;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 use Psr\Log\LoggerInterface;
+use CodeIgniter\Cookie\Cookie;
 
 /**
  * Class BaseController
@@ -54,5 +55,26 @@ abstract class BaseController extends Controller
         // Preload any models, libraries, etc, here.
 
         // E.g.: $this->session = \Config\Services::session();
+    }
+    
+    protected function cekCookie (String $link){
+        helper('cookie');
+        if (! get_cookie('x')){
+            return redirect()->to('/3201010003'.$link);
+        }
+        return redirect()->to(get_cookie('x').$link);
+    }
+
+    protected function aturCookieDesa($kode_desa){
+        helper(['cookie', 'desa', 'response']);
+        
+        $cookie = new Cookie(
+            'x',
+            $kode_desa,
+            [
+                'max-age' => 3600 * 12, // Expires in 2 hours
+            ]
+        );
+        set_cookie($cookie);
     }
 }
