@@ -4,8 +4,8 @@ namespace App\Controllers;
 
 class SkPembina extends BaseController
 {
-    public function index(): string
+    public function index()
     {
-        return view('content/sk_pembina');
+        return $this->cekCookie('/skpembina');
     }
 }
