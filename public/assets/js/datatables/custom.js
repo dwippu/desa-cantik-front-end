@@ -79,6 +79,15 @@ $(document).ready(function(){
     laporan_bulanan.buttons().container()
     .appendTo('#example_wrapper');
 
+    // Modal
+    $(document).on('click', '#btnFilter', function(){
+        $('#modalFilter').modal('show');
+    });
+
+    $('.closeModal').click(function(e) {
+        $('#modalFilter').modal('hide');
+    });
+
     // Menu ubah Desa
     $('#pilih_kabupaten').change(function(){
         let idkab = $('#pilih_kabupaten :selected').val();
@@ -89,5 +98,6 @@ $(document).ready(function(){
             }
             $('#pilih_desa').prop("disabled", false);
         }})
+        $('#submitFilter').prop("disabled", false);
     });
 });
