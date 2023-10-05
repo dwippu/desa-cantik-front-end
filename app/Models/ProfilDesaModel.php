@@ -11,7 +11,7 @@ class ProfilDesaModel extends Model
     protected $primaryKey       = 'kode_desa';
 
     function nowProfil($kode_desa){
-		$data = $this->db->table('profil_desa')->where(['kode_desa'=>$kode_desa, 'approval'=>'diterima'])->orderBy('id ASC')->get();
+		$data = $this->db->table('profil_desa')->where(['kode_desa'=>$kode_desa, 'approval'=>'disetujui'])->orderBy('id ASC')->get();
         if (is_null($data)) {
             return null;
         } else {

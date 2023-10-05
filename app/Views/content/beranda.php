@@ -14,26 +14,8 @@
                         <div class="text-white location pe-3 me-2 fs-6 text-start animated slideInRight" style="border-right:1.5px dashed #212529; border-color:white; border-width:medium">Lokasi<br>
                             <span class="text-white fs-5 fw-bolder animated slideInRight">Desa <?= $nama_desa['nama_desa'] ?></span>
                         </div>
-                        <button class="btn btn-light ms-2 py-1 px-3 fw-bold animated slideInRight" data-toggle="modal" data-target="#MFDModal">Ubah Lokasi</button>
+                        <button id="btnFilter" class="btn btn-light ms-2 py-1 px-3 fw-bold animated slideInRight" data-toggle="modal" data-target="#modalFilter">Ubah Lokasi</button>
                     </nav>
-                    <div class="mt-2">
-                        <form id="" action="/ubah" method="post">
-                            <div class="form-group">
-                                <div class="dropdown bootstrap-select select-mfd form-control">
-                                    <select class="form-select" name="kabupaten" id="pilih_kabupaten">
-                                        <option  value=''>-- Pilih Kabupaten --</option>
-                                        <?php foreach ($kab as $i): ?>
-                                            <option value="<?= $i['kab'] ?>"><?= $i['nama_kab'] ?></option>
-                                        <?php endforeach;?>
-                                    </select>
-                                    <select class="form-select" name="desa" id="pilih_desa" disabled>
-                                        <option selected disabled value=''>-- Pilih Desa --</option>
-                                    </select>
-                                    <button type="submit" class="btn btn-light mt-3 py-3">Ubah</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
                 </div>
                 <div class="col-lg-6 align-self-end text-center text-lg-end">
                     <img class="img-fluid" src="../assets/img/hero-img.png" alt="">
@@ -73,10 +55,6 @@
                     </div>
                     <div class="d-flex align-items-center mt-4">
                         <a class="btn btn-primary rounded-pill px-4 me-3" href="/tentang">Profil Desa</a>
-                        <!-- <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a> -->
                     </div>
                 </div>
             </div>
@@ -118,7 +96,7 @@
                                     style="width: 60px; height: 60px;">
                                 <div class="ps-3">
                                     <h5 class="mb-1">Abdul Halim</h5>
-                                    <span>Kemendes PDTT Periode 2019-2024</span>
+                                    <span>Menteri DPDTT Periode 2019-2024</span>
                                 </div>
                             </div>
                         </div>
@@ -302,5 +280,39 @@
         </div>
     </div>
     <!-- FAQ END -->
+
+    <!-- Modal View-->
+    <div class="modal fade" id="modalFilter" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Detail Pengajuan</h5>
+            <button type="button" class="btn btn-light rounded-pill closeModal" data-dismiss="modal">
+            X
+            </button>
+        </div>
+            <div class="modal-body">
+                <form id="" action="/ubah" method="post">
+                    <div class="form-group">
+                        <div class="dropdown bootstrap-select select-mfd form-control">
+                            <select class="form-select mb-2" name="kabupaten" id="pilih_kabupaten">
+                                <option  value=''>-- Pilih Kabupaten --</option>
+                                <?php foreach ($kab as $i): ?>
+                                    <option value="<?= $i['kab'] ?>"><?= $i['nama_kab'] ?></option>
+                                <?php endforeach;?>
+                            </select>
+                            <select class="form-select mb-2" name="desa" id="pilih_desa" disabled>
+                                <option selected disabled value=''>-- Pilih Desa --</option>
+                            </select>
+                            <div class="modal-footer p-0">
+                                <button id="submitFilter" type="submit" class="btn btn-primary rounded-pill px-4 me-3" disabled>Ubah</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
 
 <?= $this->endSection(); ?>

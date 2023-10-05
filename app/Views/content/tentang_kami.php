@@ -20,20 +20,18 @@
     </div>
     <!-- Informasi Umum End -->
 
-
     <!-- Struktur Start -->
     <div id="struktur" class="container-fluid bg-light py-5 mt-0">
         <div class="container py-5">
-            <div class="row g-3 align-items-center">
-                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
-                    <h1 class="mb-4">Struktur Pemerintahan Desa <?= ($profil) ? $nama_desa['nama_desa'] : '' ?></h1>
+                <div class="col-lg-12 wow fadeIn" data-wow-delay="0.1s">
+                    <h1 class="mb-4">Struktur Organisasi Desa Cantik <?= ($profil) ? $nama_desa['nama_desa'] : '' ?></h1>
                     <p class="mb-2"><?= ($profil) ? $profil['alamat'] : '' ?></p>
                     <a class="mb-4" href="mailto: <?= ($profil) ? $profil['email'] : '' ?>"><?= ($profil) ? $profil['email'] : '' ?></a>
                     <p class="mb-4"><?= ($profil) ? $profil['telp'] : '' ?></p>
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-12">
                     <div class="row g-4">
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <div class="row g-4">
                                 <div class="col-10 wow fadeIn" data-wow-delay="0.1s">
                                     <div class="team-item bg-white text-center rounded p-3">
@@ -56,11 +54,15 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-10 wow fadeIn" data-wow-delay="0.5s">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row g-4">
+                                <div class="col-10 wow fadeIn" data-wow-delay="0.2s">
                                     <div class="team-item bg-white text-center rounded p-3">
                                         <img class="img-fluid rounded-circle p-4 mb-3" s src="//:0" style="background-color: gold" alt="" height="180" width="180">
-                                        <h5 class="mb-0">Sinatrya 3</h5>
-                                        <small>Bendahara Desa</small>
+                                        <h5 class="mb-0">Sinatrya 1</h5>
+                                        <small>Sekretaris Desa</small>
                                         <div class="d-flex justify-content-center mt-3">
                                             <a class="btn btn-square btn-primary m-1" href="">
                                                 <!-- <i class="fab fa-facebook-f"></i> -->
@@ -79,13 +81,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 pt-md-4">
+                        <div class="col-md-4">
                             <div class="row g-4">
                                 <div class="col-10 wow fadeIn" data-wow-delay="0.3s">
                                     <div class="team-item bg-white text-center rounded p-3">
                                         <img class="img-fluid rounded-circle p-4 mb-3" s src="//:0" style="background-color: gold" alt="" height="180" width="180">
                                         <h5 class="mb-0">Sinatrya 2</h5>
-                                        <small>Sekretaris Desa</small>
+                                        <small>Pembina Desa cantik</small>
                                         <div class="d-flex justify-content-center mt-3">
                                             <a class="btn btn-square btn-primary m-1" href="">
                                                 <!-- <i class="fab fa-facebook-f"></i> -->
@@ -102,11 +104,92 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-10 wow fadeIn" data-wow-delay="0.7s">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-4 mt-3">
+                        <div class="col-md-3">
+                            <div class="row g-4">
+                                <div class="col-10 wow fadeIn" data-wow-delay="0.4s">
                                     <div class="team-item bg-white text-center rounded p-3">
                                         <img class="img-fluid rounded-circle p-4 mb-3" s src="//:0" style="background-color: gold" alt="" height="180" width="180">
-                                        <h5 class="mb-0">Sinatrya 4</h5>
-                                        <small>Pembina Desa</small>
+                                        <h5 class="mb-0">Sinatrya 1</h5>
+                                        <small>Agen Desa</small>
+                                        <div class="d-flex justify-content-center mt-3">
+                                            <a class="btn btn-square btn-primary m-1" href="">
+                                                <!-- <i class="fab fa-facebook-f"></i> -->
+                                            </a>
+                                            <a class="btn btn-square btn-primary m-1" href="">
+                                                <!-- <i class="fab fa-twitter"></i> -->
+                                            </a>
+                                            <a class="btn btn-square btn-primary m-1" href="">
+                                                <!-- <i class="fab fa-instagram"></i> -->
+                                            </a>
+                                            <a class="btn btn-square btn-primary m-1" href="">
+                                                <!-- <i class="fab fa-linkedin-in"></i> -->
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="row g-4">
+                                <div class="col-10 wow fadeIn" data-wow-delay="0.4s">
+                                    <div class="team-item bg-white text-center rounded p-3">
+                                        <img class="img-fluid rounded-circle p-4 mb-3" s src="//:0" style="background-color: gold" alt="" height="180" width="180">
+                                        <h5 class="mb-0">Sinatrya 1</h5>
+                                        <small>Agen Desa</small>
+                                        <div class="d-flex justify-content-center mt-3">
+                                            <a class="btn btn-square btn-primary m-1" href="">
+                                                <!-- <i class="fab fa-facebook-f"></i> -->
+                                            </a>
+                                            <a class="btn btn-square btn-primary m-1" href="">
+                                                <!-- <i class="fab fa-twitter"></i> -->
+                                            </a>
+                                            <a class="btn btn-square btn-primary m-1" href="">
+                                                <!-- <i class="fab fa-instagram"></i> -->
+                                            </a>
+                                            <a class="btn btn-square btn-primary m-1" href="">
+                                                <!-- <i class="fab fa-linkedin-in"></i> -->
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="row g-4">
+                                <div class="col-10 wow fadeIn" data-wow-delay="0.4s">
+                                    <div class="team-item bg-white text-center rounded p-3">
+                                        <img class="img-fluid rounded-circle p-4 mb-3" s src="//:0" style="background-color: gold" alt="" height="180" width="180">
+                                        <h5 class="mb-0">Sinatrya 1</h5>
+                                        <small>Agen Desa</small>
+                                        <div class="d-flex justify-content-center mt-3">
+                                            <a class="btn btn-square btn-primary m-1" href="">
+                                                <!-- <i class="fab fa-facebook-f"></i> -->
+                                            </a>
+                                            <a class="btn btn-square btn-primary m-1" href="">
+                                                <!-- <i class="fab fa-twitter"></i> -->
+                                            </a>
+                                            <a class="btn btn-square btn-primary m-1" href="">
+                                                <!-- <i class="fab fa-instagram"></i> -->
+                                            </a>
+                                            <a class="btn btn-square btn-primary m-1" href="">
+                                                <!-- <i class="fab fa-linkedin-in"></i> -->
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="row g-4">
+                                <div class="col-10 wow fadeIn" data-wow-delay="0.4s">
+                                    <div class="team-item bg-white text-center rounded p-3">
+                                        <img class="img-fluid rounded-circle p-4 mb-3" s src="//:0" style="background-color: gold" alt="" height="180" width="180">
+                                        <h5 class="mb-0">Sinatrya 1</h5>
+                                        <small>Agen Desa</small>
                                         <div class="d-flex justify-content-center mt-3">
                                             <a class="btn btn-square btn-primary m-1" href="">
                                                 <!-- <i class="fab fa-facebook-f"></i> -->
@@ -127,7 +210,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
     </div>
     <!-- Struktur End -->
@@ -136,8 +218,7 @@
     <div id="alamat" class="container-xxl py-5">
         <div class="container py-5">
             <div class="row g-5">
-                <h3 class="mb-0">Hubungi Kami</h3>
-                <p class="mt-4">BPS Provinsi Jawa Barat</p>
+                <h3 class="mb-0">Lokasi Kami</h3>
                 <!--The div element for the map -->
                 <?php if ($profil):?>
                 <div id="map">
