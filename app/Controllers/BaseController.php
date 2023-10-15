@@ -57,14 +57,25 @@ abstract class BaseController extends Controller
         // E.g.: $this->session = \Config\Services::session();
     }
     
+    /**
+     * Ketika pengguna mengakses langsung ke arah root atau url tertentu yang tidak memiliki kode desa,
+     * dan user tersebut dalam 12 jam tidak mengakses laman desa tertentu
+     * maka user tersebut akan diarahkan pada desa $y
+     */
     protected function cekCookie (String $link){
         helper('cookie');
+        $y = '/3201010003';
         if (! get_cookie('x')){
-            return redirect()->to('/3201010003'.$link);
+            return redirect()->to($y.$link);
         }
         return redirect()->to(get_cookie('x').$link);
     }
 
+     /**
+     * Fungsi ini digunakan untuk mengatur cookie sebagai riwayat desa terakhir yang dibuka
+     * 
+     * @retrurn void
+     */
     protected function aturCookieDesa($kode_desa){
         helper(['cookie', 'desa', 'response']);
         
