@@ -2,8 +2,6 @@
 
 namespace App\Controllers;
 
-use CodeIgniter\Cookie\Cookie;
-
 class SkDescan extends BaseController
 {
     public function index()

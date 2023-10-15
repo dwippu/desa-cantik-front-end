@@ -2,8 +2,6 @@
 
 namespace App\Controllers;
 
-use CodeIgniter\Cookie\Cookie;
-
 class SkAgen extends BaseController
 {
     public function index()
