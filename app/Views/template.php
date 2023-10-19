@@ -53,7 +53,12 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark p-0">
                 <a href="/" class="navbar-brand d-flex">
-                    <img src="/assets/img/Logo.png" alt="logo" width="100%" height="50" class="px-1" >
+                    <span style="background-color:#FFFFFF;padding:0.3em 0.25em;height:50"  class="px-1 rounded-pill" >
+                        <img src="/assets/img/logo bps.png" alt="logo" width="100%" height="40" style="padding:0.3em 0.25em">
+                    </span>
+                    <span>
+                        <img src="/assets/img/Logo.png" alt="logo" width="100%" height="50" class="px-1" >
+                    </span>
                     <div class="pt-2 px-2" style="border:0; border-left: 1px; border-color:white; border-style:solid;">
                         <p class="display-5 m-0 p-0 text-white" style="font-size: medium;"><b>Website Desa Cantik</b></p>
                         <p class="display-5 m-0, p-0 text-white" style="font-size: small; margin-bottom:0;">Desa <?= $nama_desa['nama_desa'] ?></p>
@@ -86,7 +91,6 @@
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle <?php if (preg_match("/^laporan/", uri_string()) == 1) echo 'active' ?>" data-bs-toggle="dropdown">Laporan</a>
                             <div class="dropdown-menu bg-light mt-2">
-                                <a href="/<?= service('uri')->getSegment(1) ?>/laporanpembinaan" class="dropdown-item">Laporan Pembinaan</a>
                                 <a href="/<?= service('uri')->getSegment(1) ?>/laporanbulanan" class="dropdown-item">Laporan Bulanan</a>
                             </div>
                         </div>
