@@ -302,7 +302,7 @@
                                 <?php endforeach;?>
                             </select>
                             <select class="form-select mb-2" name="kecamatan" id="pilih_kecamatan" disabled>
-                                <option selected disabled value=''>-- Pilih Kecamtan --</option>
+                                <option selected disabled value=''>-- Pilih Kecamatan --</option>
                             </select>
                             <select class="form-select mb-2" name="desa" id="pilih_desa" disabled>
                                 <option selected disabled value=''>-- Pilih Desa --</option>
