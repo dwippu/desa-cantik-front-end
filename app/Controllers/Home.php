@@ -30,9 +30,15 @@ class Home extends BaseController
         return redirect()->to($post['desa']);
     }
 
-    public function desa($kab){
+    public function kec($kab){
         $desa = new DesaModel();
-        $descan = $desa->findDescanByKab($kab);
+        $kec = $desa->distinctKec($kab);
+        return $this->response->setJSON($kec);
+    }
+
+    public function desa($kab, $kec){
+        $desa = new DesaModel();
+        $descan = $desa->findDescanByKec($kab, $kec);
         return $this->response->setJSON($descan);
     }
 }

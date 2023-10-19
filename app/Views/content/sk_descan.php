@@ -49,24 +49,6 @@
                                 <td>15 Agustus 2021</td>
                                 <td><button class="btn btn-outline-primary rounded-pill"><i class="fa fa-search"></i>View</button></td>
                             </tr>
-                            <tr>
-                                <td>2021</td>
-                                <td>0630001/32041/KPA/2021</td>
-                                <td>15 Agustus 2021</td>
-                                <td><button class="btn btn-outline-primary rounded-pill"><i class="fa fa-search"></i>View</button></td>
-                            </tr>
-                            <tr>
-                                <td>2021</td>
-                                <td>0630001/32041/KPA/2021</td>
-                                <td>15 Agustus 2021</td>
-                                <td><button class="btn btn-outline-primary rounded-pill"><i class="fa fa-search"></i>View</button></td>
-                            </tr>
-                            <tr>
-                                <td>2021</td>
-                                <td>0630001/32041/KPA/2021</td>
-                                <td>15 Agustus 2021</td>
-                                <td><button class="btn btn-outline-primary rounded-pill"><i class="fa fa-search"></i>View</button></td>
-                            </tr>
                         </tbody>
                     </table>
                 </div>

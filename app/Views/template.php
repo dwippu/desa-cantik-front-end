@@ -110,7 +110,7 @@
                         Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
                     </div>
                     <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
-                        Desa <?= $nama_desa['nama_desa'] ?> | <?= $nama_desa['nama_kab'] ?> | <?= $nama_desa['nama_prov'] ?>
+                        Desa <?= $nama_desa['nama_desa'] ?> | Kec. <?= $nama_desa['nama_kec'] ?> | <?= $nama_desa['nama_kab'] ?> | <?= $nama_desa['nama_prov'] ?>
                     </div>
                 </div>
             </div>

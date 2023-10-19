@@ -91,12 +91,29 @@ $(document).ready(function(){
     // Menu ubah Desa
     $('#pilih_kabupaten').change(function(){
         let idkab = $('#pilih_kabupaten :selected').val();
-        $.ajax({url: "/desa/"+idkab, success: function(result){
-            $('#pilih_desa option').not(':disabled').remove();
-            for (var key in result){
-                $('#pilih_desa').append($('<option>', {value:result[key]['kode_desa'], text:result[key]['nama_desa']}));
+        $.ajax({url: "/kec/"+idkab, success: function(result){
+            $('#pilih_kecamatan option').not(':disabled').remove();
+            if(! (result === undefined || result.length == 0)){
+                for (var key in result){
+                    $('#pilih_kecamatan').append($('<option>', {value:result[key]['kec'], text:result[key]['kec']+' - '+result[key]['nama_kec']}));
+                }
             }
-            $('#pilih_desa').prop("disabled", false);
+            $('#pilih_kecamatan').prop("disabled", false);
+        }})
+        $('#submitFilter').prop("disabled", false);
+    });
+
+    $('#pilih_kecamatan').change(function(){
+        let idkab = $('#pilih_kabupaten :selected').val();
+        let idkec = $('#pilih_kecamatan :selected').val();
+        $.ajax({url: "/desa/"+idkab+'/'+idkec, success: function(result){
+            $('#pilih_desa option').not(':disabled').remove();
+            if(! (result === undefined || result.length == 0)){
+                for (var key in result){
+                    $('#pilih_desa').append($('<option>', {value:result[key]['kode_desa'], text:result[key]['desa']+' - '+result[key]['nama_desa']}));
+                }
+                $('#pilih_desa').prop("disabled", false);
+            }
         }})
         $('#submitFilter').prop("disabled", false);
     });
