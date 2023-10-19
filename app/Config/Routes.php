@@ -8,7 +8,8 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 $routes->get('(:num)', 'Home::home/$1');
 $routes->post('/ubah', 'Home::ubah');
-$routes->get('/desa/(:any)', 'Home::desa/$1'); // url ajax
+$routes->get('/kec/(:any)', 'Home::kec/$1'); // url ajax
+$routes->get('/desa/(:any)/(:any)', 'Home::desa/$1/$2'); // url ajax
 
 $routes->get('/tentang', 'TentangKami::index');
 $routes->get('(:num)/tentang', 'TentangKami::tentang/$1');

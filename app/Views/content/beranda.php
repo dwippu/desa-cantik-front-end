@@ -298,8 +298,11 @@
                             <select class="form-select mb-2" name="kabupaten" id="pilih_kabupaten">
                                 <option  value=''>-- Pilih Kabupaten --</option>
                                 <?php foreach ($kab as $i): ?>
-                                    <option value="<?= $i['kab'] ?>"><?= $i['nama_kab'] ?></option>
+                                    <option value="<?= $i['kab'] ?>"><?= $i['kab'].' - '.$i['nama_kab'] ?></option>
                                 <?php endforeach;?>
+                            </select>
+                            <select class="form-select mb-2" name="kecamatan" id="pilih_kecamatan" disabled>
+                                <option selected disabled value=''>-- Pilih Kecamtan --</option>
                             </select>
                             <select class="form-select mb-2" name="desa" id="pilih_desa" disabled>
                                 <option selected disabled value=''>-- Pilih Desa --</option>
