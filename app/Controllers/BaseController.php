@@ -56,7 +56,7 @@ abstract class BaseController extends Controller
 
         // E.g.: $this->session = \Config\Services::session();
     }
-    
+
     /**
      * Ketika pengguna mengakses langsung ke arah root atau url tertentu yang tidak memiliki kode desa,
      * dan user tersebut dalam 12 jam tidak mengakses laman desa tertentu

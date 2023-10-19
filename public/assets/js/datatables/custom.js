@@ -78,14 +78,18 @@ $(document).ready(function(){
 
     laporan_bulanan.buttons().container()
     .appendTo('#example_wrapper');
-
+    
     // Modal
     $(document).on('click', '#btnFilter', function(){
         $('#modalFilter').modal('show');
     });
 
+    // Modal Close
     $('.closeModal').click(function(e) {
-        $('#modalFilter').modal('hide');
+        $('#modalCancel').modal('hide');
+        $('#modalView').modal('hide');
+        $('#modalInValid').modal('hide');
+        $('#modalHapusSk').modal('hide');
     });
 
     // Menu ubah Desa
@@ -112,9 +116,28 @@ $(document).ready(function(){
                 for (var key in result){
                     $('#pilih_desa').append($('<option>', {value:result[key]['kode_desa'], text:result[key]['desa']+' - '+result[key]['nama_desa']}));
                 }
-                $('#pilih_desa').prop("disabled", false);
             }
+            $('#pilih_desa').prop("disabled", false);
         }})
         $('#submitFilter').prop("disabled", false);
+    });
+
+    // View SK
+    $(document).on('click', '#btnViewSk', function(){
+        var url = window.location.href;
+        var endurl = url.split("/").pop();
+        var file = $(this).attr('data-file');
+        var no_sk = $(this).attr('data-sk');
+        var source = $('#source').text();
+        console.log(source+"/SK Agen/"+file);
+        if (endurl == 'skagen'){
+            document.getElementById("fileSkAgen").src = source+"/SK%20Agen/"+file;
+        } else if (endurl == 'skdescan'){
+            document.getElementById("fileSkAgen").src = source+"/SK%20Descan/"+file;
+        } else if (endurl == 'skpembina'){
+            document.getElementById("fileSkAgen").src = source+"/SK%20Pembina/"+file;
+        }
+        $('#namaSK').text(no_sk);
+        $('#modalView').modal('show');
     });
 });
