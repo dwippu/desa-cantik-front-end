@@ -286,7 +286,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
         <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">Pilih Desa</h5>
+            <h5 class="modal-title" id="exampleModalLongTitle">Pilih Lokasi</h5>
             <button type="button" class="btn btn-light rounded-pill closeModal" data-dismiss="modal">
             X
             </button>
