@@ -27,12 +27,22 @@ function nama_kec($kode_desa){
     return false;
 }
 
+// nama kabupataen berdasarkan kode desa
 function nama_kab($kode_desa){
     $desa = full_info_desa($kode_desa);
     if ($desa){
         return $desa['nama_kab'];
     }
     return false;
+}
+
+// nama kabupaten berdasarkan kode kab (4 DIGIT)
+function nama_kabupaten($kode_kab){
+    $desa = new DesaModel();
+    if (empty($desa->namaKab($kode_kab))){
+        return false;
+    };
+    return $desa->namaKab($kode_kab)[0]['nama_kab'];
 }
 
 function nama_prov($kode_desa){

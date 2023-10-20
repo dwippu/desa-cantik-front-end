@@ -32,48 +32,15 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>2021</td>
-                                <td>Bandung</td>
-                                <td>0630001/32041/KPA/2021</td>
-                                <td>15 Agustus 2021</td>
-                                <td><button class="btn btn-outline-primary rounded-pill"><i class="fa fa-search"></i>View</button></td>
-                            </tr>
-                            <tr>
-                                <td>2021</td>
-                                <td>Bandung</td>
-                                <td>0630001/32041/KPA/2021</td>
-                                <td>15 Agustus 2021</td>
-                                <td><button class="btn btn-outline-primary rounded-pill"><i class="fa fa-search"></i>View</button></td>
-                            </tr>
-                            <tr>
-                                <td>2021</td>
-                                <td>Bandung</td>
-                                <td>0630001/32041/KPA/2021</td>
-                                <td>15 Agustus 2021</td>
-                                <td><button class="btn btn-outline-primary rounded-pill"><i class="fa fa-search"></i>View</button></td>
-                            </tr>
-                            <tr>
-                                <td>2021</td>
-                                <td>Bandung</td>
-                                <td>0630001/32041/KPA/2021</td>
-                                <td>15 Agustus 2021</td>
-                                <td><button class="btn btn-outline-primary rounded-pill"><i class="fa fa-search"></i>View</button></td>
-                            </tr>
-                            <tr>
-                                <td>2021</td>
-                                <td>Bandung</td>
-                                <td>0630001/32041/KPA/2021</td>
-                                <td>15 Agustus 2021</td>
-                                <td><button class="btn btn-outline-primary rounded-pill"><i class="fa fa-search"></i>View</button></td>
-                            </tr>
-                            <tr>
-                                <td>2021</td>
-                                <td>Bandung</td>
-                                <td>0630001/32041/KPA/2021</td>
-                                <td>15 Agustus 2021</td>
-                                <td><button class="btn btn-outline-primary rounded-pill"><i class="fa fa-search"></i>View</button></td>
-                            </tr>
+                            <?php foreach ($sk as $row):?>
+                                <tr>
+                                    <td><?= date("Y",strtotime($row['tanggal_sk'])) ?></td>
+                                    <td><?=$row['nama_kab']?></td>
+                                    <td><?=$row['nomor_sk']?></td>
+                                    <td><?=$row['tanggal_sk']?></td>
+                                    <td><button data-file="<?=$row['file']?>" data-sk="<?=$row['nomor_sk']?>" id="btnViewSk" class="btn btn-outline-primary rounded-pill" data-toggle="modal" data-target="#modalView"><i class="ti ti-search"></i>View</button></td>
+                                </tr>
+                            <?php endforeach;?>
                         </tbody>
                     </table>
                 </div>
@@ -81,6 +48,22 @@
         </div>
     </div>
 
+<!-- Modal View-->
+<div class="modal fade" id="modalView" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="namaSK">Surat Keputusan Desa Cantik</h5>
+        <button type="button" class="btn btn-light rounded-pill closeModal" data-dismiss="modal">
+          X
+        </button>
+      </div>
+        <div class="modal-body">
+            <embed id="fileSkAgen" type="application/pdf" width="100%" height="675px"></embed>
+        </div>
+    </div>
+  </div>
+</div>
     
 
 <?= $this->endSection(); ?>

@@ -32,12 +32,12 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <?php foreach($sk as $sk): ?>
+                        <?php foreach($sk as $row): ?>
                             <tr>
-                                <td><?= $sk['tahun'] ?></td>
-                                <td><?= $sk['nomor_sk'] ?></td>
-                                <td><?= $sk['tanggal_sk'] ?></td>
-                                <td><button data-file="<?=$sk['file']?>" data-sk="<?=$sk['nomor_sk']?>" id="btnViewSk" class="btn btn-outline-primary rounded-pill" data-toggle="modal" data-target="#modalView"><i class="ti ti-search"></i> View</button></td>
+                                <td><?= date("Y",strtotime($row['tanggal_sk'])) ?></td>
+                                <td><?= $row['nomor_sk'] ?></td>
+                                <td><?= $row['tanggal_sk'] ?></td>
+                                <td><button data-file="<?=$row['file']?>" data-sk="<?=$row['nomor_sk']?>" id="btnViewSk" class="btn btn-outline-primary rounded-pill" data-toggle="modal" data-target="#modalView"><i class="ti ti-search"></i> View</button></td>
                             </tr>
                         <?php endforeach; ?>
                     </tbody>
@@ -64,4 +64,4 @@
   </div>
 </div>
 
-    <?= $this->endSection(); ?>
+<?= $this->endSection(); ?>

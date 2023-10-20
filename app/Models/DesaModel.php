@@ -30,5 +30,8 @@ class DesaModel extends Model
         return $this->where(['kab'=>$kab])->where(['descan'=>1])->findAll();
     }
 
-
+    // kabupaten berdasarkan kode kab (4 DIGIT)
+    public function namaKab($kab){
+        return $this->builder()->where(['prov'=>substr($kab,0,2),'kab'=>substr($kab,2,2)])->select(['kab', 'nama_kab'])->distinct()->get()->getResultArray();
+    }
 }
