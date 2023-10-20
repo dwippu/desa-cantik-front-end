@@ -1,7 +1,7 @@
 <?= $this->extend('template'); ?>
 
 <?= $this->Section('content'); ?>
-
+<?php helper('webbackend')?>
     <!-- Informasi Umum Start -->
     <div id="profil" class="container-fluid pt-5 bg-primary hero-header">
         <div class="container pt-4">
@@ -35,19 +35,15 @@
                             <div class="row g-4">
                                 <div class="col-10 wow fadeIn" data-wow-delay="0.1s">
                                     <div class="team-item bg-white text-center rounded p-3">
-                                        <img class="img-fluid rounded-circle p-4 mb-3" s src="//:0" style="background-color: gold" alt="" height="180" width="180">
+                                        <img class="img-fluid rounded-circle p-4 mb-3" src="<?= foto().$kepala['gambar'];?>" style="background-color: gold" alt="" height="180" width="180">
                                         <h5 class="mb-0"><?= ($kepala) ? $kepala['nama'] : '';?></h5>
                                         <small>Kepala Desa</small>
                                         <div class="d-flex justify-content-center mt-3">
-                                            <a class="btn btn-square btn-primary m-1" href="">
-                                            </a>
                                             <a class="btn btn-square btn-primary m-1" href="mailto:<?= ($kepala) ? $kepala['email'] : '';?>">
                                                 <i class="fas fa-envelope"></i>
                                             </a>
                                             <a class="btn btn-square btn-primary m-1" href="https://www.instagram.com/<?= ($kepala) ? $kepala['instagram'] : '';?>" target="_blank">
                                                 <i class="fab fa-instagram"></i>
-                                            </a>
-                                            <a class="btn btn-square btn-primary m-1" href="">
                                             </a>
                                         </div>
                                     </div>
@@ -58,19 +54,15 @@
                             <div class="row g-4">
                                 <div class="col-10 wow fadeIn" data-wow-delay="0.2s">
                                     <div class="team-item bg-white text-center rounded p-3">
-                                        <img class="img-fluid rounded-circle p-4 mb-3" s src="//:0" style="background-color: gold" alt="" height="180" width="180">
+                                        <img class="img-fluid rounded-circle p-4 mb-3" src="<?= foto().$sekretaris['gambar'];?>" style="background-color: gold" alt="" height="180" width="180">
                                         <h5 class="mb-0"><?= ($sekretaris) ? $sekretaris['nama'] : '';?></h5>
                                         <small>Sekretaris Desa</small>
                                         <div class="d-flex justify-content-center mt-3">
-                                            <a class="btn btn-square btn-primary m-1" href="">
-                                            </a>
                                             <a class="btn btn-square btn-primary m-1" href="mailto:<?= ($sekretaris) ? $sekretaris['email'] : '';?>">
                                                 <i class="fas fa-envelope"></i>
                                             </a>
                                             <a class="btn btn-square btn-primary m-1" href="https://www.instagram.com/<?= ($sekretaris) ? $sekretaris['instagram'] : '';?>" target="_blank">
                                                 <i class="fab fa-instagram"></i>
-                                            </a>
-                                            <a class="btn btn-square btn-primary m-1" href="">
                                             </a>
                                         </div>
                                     </div>
@@ -81,19 +73,15 @@
                             <div class="row g-4">
                                 <div class="col-10 wow fadeIn" data-wow-delay="0.3s">
                                     <div class="team-item bg-white text-center rounded p-3">
-                                        <img class="img-fluid rounded-circle p-4 mb-3" s src="//:0" style="background-color: gold" alt="" height="180" width="180">
+                                        <img class="img-fluid rounded-circle p-4 mb-3" src="<?= foto().$pembina['gambar'];?>" style="background-color: gold" alt="" height="180" width="180">
                                         <h5 class="mb-0"><?= ($pembina) ? $pembina['nama'] : '';?></h5>
                                         <small>Pembina Desa cantik</small>
                                         <div class="d-flex justify-content-center mt-3">
-                                            <a class="btn btn-square btn-primary m-1" href="">
-                                            </a>
                                             <a class="btn btn-square btn-primary m-1" href="mailto:<?= ($pembina) ? $pembina['email'] : '';?>">
                                                 <i class="fas fa-envelope"></i>
                                             </a>
                                             <a class="btn btn-square btn-primary m-1" href="https://www.instagram.com/<?= ($pembina) ? $pembina['instagram'] : '';?>" target="_blank">
                                                 <i class="fab fa-instagram"></i>
-                                            </a>
-                                            <a class="btn btn-square btn-primary m-1" href="">
                                             </a>
                                         </div>
                                     </div>
@@ -107,19 +95,15 @@
                                 <div class="row g-4">
                                     <div class="col-10 wow fadeIn" data-wow-delay="0.4s">
                                         <div class="team-item bg-white text-center rounded p-3">
-                                            <img class="img-fluid rounded-circle p-4 mb-3" s src="//:0" style="background-color: gold" alt="" height="180" width="180">
+                                            <img class="img-fluid rounded-circle p-4 mb-3" src="<?= foto().$row['gambar'];?>" style="background-color: gold" alt="" height="180" width="180">
                                             <h5 class="mb-0"><?= $row['nama']?></h5>
                                             <small>Agen Desa</small>
                                             <div class="d-flex justify-content-center mt-3">
-                                                <a class="btn btn-square btn-primary m-1" href="">
-                                                </a>
                                                 <a class="btn btn-square btn-primary m-1" href="mailto:<?= $row['email']?>">
                                                     <i class="fas fa-envelope"></i>
                                                 </a>
                                                 <a class="btn btn-square btn-primary m-1" href="https://www.instagram.com/<?= $row['instagram']?>" target="_blank">
                                                     <i class="fab fa-instagram"></i>
-                                                </a>
-                                                <a class="btn btn-square btn-primary m-1" href="">
                                                 </a>
                                             </div>
                                         </div>

@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\LaporanBulananModel;
 
 class LaporanBulanan extends BaseController
 {
@@ -17,6 +18,8 @@ class LaporanBulanan extends BaseController
             return;
         };
         $this->aturCookieDesa($kode_desa);
-        return view('content/laporan_bulanan', ['nama_desa'=>full_info_desa($kode_desa)]);
+        $laporan = new LaporanBulananModel();
+        $laporan_bulanan = $laporan->getLaporanBulanan($kode_desa);
+        return view('content/laporan_bulanan', ['nama_desa'=>full_info_desa($kode_desa), 'laporan'=>$laporan_bulanan]);
     }
 }

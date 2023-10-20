@@ -140,4 +140,15 @@ $(document).ready(function(){
         $('#namaSK').text(no_sk);
         $('#modalView').modal('show');
     });
+
+    // View Laporan
+    $(document).on('click', '#btnViewLaporan', function(){
+        var file = $(this).attr('data-file');
+        var tgl = $(this).attr('data-tgl');
+        var source = $('#source').text();
+        $('#namaLaporan').text('Laporan Bulanan - '+tgl);
+        document.getElementById("fileLaporan").src = source+"/Laporan/"+file;
+        $('#modalView').modal('show');
+
+    });
 });

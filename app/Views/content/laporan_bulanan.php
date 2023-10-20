@@ -1,6 +1,7 @@
 <?= $this->extend('template'); ?>
 
 <?= $this->Section('content'); ?>
+<p id="source" hidden><?php helper('webbackend'); echo webBackendBaseUrl(); ?></p>
 
     <!-- Hero Start -->
     <div class="container-fluid bg-primary hero-header">
@@ -27,80 +28,41 @@
                                 <th>Nama Kegiatan</th>
                                 <th>Tanggal Kegiatan</th>
                                 <th>Peserta Kegiatan</th>
-                                <th>Link</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
+                        <?php foreach($laporan as $row): ?>
                             <tr>
-                                <td>Pembinaan Desa Sukamaju</td>
-                                <td>15 Agustus 2023</td>
-                                <td>Seluruh Panitia Desa Cantik Desa Sukamaju</td>
-                                <td><a href="https://drive.google.com/drive/folders/1Gkjie2H1V6h6IeRFOrr6YXdyR0fgyCGn" target="_blank">Link laporan</a></td>
-                                <td><button class="btn btn-outline-primary rounded-pill"><i class="fa fa-search"></i>View</button></td>
+                                <td><?= $row['nama_kegiatan']?></td>
+                                <td><?= date("m/d/Y",strtotime($row['tanggal_kegiatan']))?></td>
+                                <td><?= $row['peserta_kegiatan']?></td>
+                                <td><button data-file="<?=$row['file']?>" data-tgl="<?= date("m/d/Y",strtotime($row['tanggal_kegiatan']))?>" id="btnViewLaporan" class="btn btn-outline-primary rounded-pill" data-toggle="modal" data-target="#modalView"><i class="fa fa-search"></i>View</button></td>
                             </tr>
-                            <tr>
-                                <td>Pembinaan Desa Sukamaju</td>
-                                <td>15 Agustus 2023</td>
-                                <td>Seluruh Panitia Desa Cantik Desa Sukamaju</td>
-                                <td><a href="https://drive.google.com/drive/folders/1Gkjie2H1V6h6IeRFOrr6YXdyR0fgyCGn" target="_blank">Link laporan</a></td>
-                                <td><button class="btn btn-outline-primary rounded-pill"><i class="fa fa-search"></i>View</button></td>
-                            </tr>
-                            <tr>
-                                <td>Pembinaan Desa Sukamaju</td>
-                                <td>15 Agustus 2023</td>
-                                <td>Seluruh Panitia Desa Cantik Desa Sukamaju</td>
-                                <td><a href="https://drive.google.com/drive/folders/1Gkjie2H1V6h6IeRFOrr6YXdyR0fgyCGn" target="_blank">Link laporan</a></td>
-                                <td><button class="btn btn-outline-primary rounded-pill"><i class="fa fa-search"></i>View</button></td>
-                            </tr>
-                            <tr>
-                                <td>Pembinaan Desa Sukamaju</td>
-                                <td>15 Agustus 2023</td>
-                                <td>Seluruh Panitia Desa Cantik Desa Sukamaju</td>
-                                <td><a href="https://drive.google.com/drive/folders/1Gkjie2H1V6h6IeRFOrr6YXdyR0fgyCGn" target="_blank">Link laporan</a></td>
-                                <td><button class="btn btn-outline-primary rounded-pill"><i class="fa fa-search"></i>View</button></td>
-                            </tr>
-                            <tr>
-                                <td>Pembinaan Desa Sukamaju</td>
-                                <td>15 Agustus 2023</td>
-                                <td>Seluruh Panitia Desa Cantik Desa Sukamaju</td>
-                                <td><a href="https://drive.google.com/drive/folders/1Gkjie2H1V6h6IeRFOrr6YXdyR0fgyCGn" target="_blank">Link laporan</a></td>
-                                <td><button class="btn btn-outline-primary rounded-pill"><i class="fa fa-search"></i>View</button></td>
-                            </tr>
-                            <tr>
-                                <td>Pembinaan Desa Sukamaju</td>
-                                <td>15 Agustus 2023</td>
-                                <td>Seluruh Panitia Desa Cantik Desa Sukamaju</td>
-                                <td><a href="https://drive.google.com/drive/folders/1Gkjie2H1V6h6IeRFOrr6YXdyR0fgyCGn" target="_blank">Link laporan</a></td>
-                                <td><button class="btn btn-outline-primary rounded-pill"><i class="fa fa-search"></i>View</button></td>
-                            </tr>
-                            <tr>
-                                <td>Pembinaan Desa Sukamaju</td>
-                                <td>15 Agustus 2023</td>
-                                <td>Seluruh Panitia Desa Cantik Desa Sukamaju</td>
-                                <td><a href="https://drive.google.com/drive/folders/1Gkjie2H1V6h6IeRFOrr6YXdyR0fgyCGn" target="_blank">Link laporan</a></td>
-                                <td><button class="btn btn-outline-primary rounded-pill"><i class="fa fa-search"></i>View</button></td>
-                            </tr>
-                            <tr>
-                                <td>Pembinaan Desa Sukamaju</td>
-                                <td>15 Agustus 2023</td>
-                                <td>Seluruh Panitia Desa Cantik Desa Sukamaju</td>
-                                <td><a href="https://drive.google.com/drive/folders/1Gkjie2H1V6h6IeRFOrr6YXdyR0fgyCGn" target="_blank">Link laporan</a></td>
-                                <td><button class="btn btn-outline-primary rounded-pill"><i class="fa fa-search"></i>View</button></td>
-                            </tr>
-                            <tr>
-                                <td>Pembinaan Desa Sukamaju</td>
-                                <td>15 Agustus 2023</td>
-                                <td>Seluruh Panitia Desa Cantik Desa Sukamaju</td>
-                                <td><a href="https://drive.google.com/drive/folders/1Gkjie2H1V6h6IeRFOrr6YXdyR0fgyCGn" target="_blank">Link laporan</a></td>
-                                <td><button class="btn btn-outline-primary rounded-pill"><i class="fa fa-search"></i>View</button></td>
-                            </tr>
+                        <?php endforeach; ?>
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
     </div>
+
+<!-- Modal View-->
+<div class="modal fade" id="modalView" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="namaLaporan">Laporan Bulanan</h5>
+        <button type="button" class="btn btn-light rounded-pill closeModal" data-dismiss="modal">
+          X
+        </button>
+      </div>
+        <div class="modal-body">
+            <embed id="fileLaporan" type="application/pdf" width="100%" height="675px"></embed>
+        </div>
+    </div>
+  </div>
+</div>
 
     
 
