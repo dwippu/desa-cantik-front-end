@@ -1,3 +1,11 @@
+# Website Frontend Desa Cantik Jawa Barat
+## Cara Menjalankan Kode
+Berikut adalah langkah yang harus dilakukan saat menjalankan kode program:
+1. Clone repository ke local file
+2. Import file **descan.sql** ke dalam database
+3. Jalankan kode pada url **http://localhost:8085/**
+4. Website dapat diakses pada **http://localhost:8085/**
+
 # CodeIgniter 4 Application Starter
 
 ## What is CodeIgniter?
